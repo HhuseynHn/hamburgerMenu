@@ -1,0 +1,89 @@
+
+/** @format */
+@import url("./reset.css");
+header {
+  background-color: rgba(33, 7, 7, 0.911);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  padding: 12px 0px;
+}
+.container {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  column-gap: 25px;
+  color: white;
+  font-size: 16px;
+}
+.logo {
+  color: white;
+  font-size: 25px;
+}
+.hambr-icon {
+  display: none;
+  position: fixed;
+  right: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.x-icon {
+  display: none;
+  position: fixed;
+  right: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .hambr-icon {
+    display: block;
+  }
+  .hambr-icon-list {
+    position: fixed;
+    right: 20px;
+    color: white;
+    font-size: 25px;
+  }
+  .nav-list {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 18px;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-end;
+    font-size: 16px;
+  }
+  .nav-list li {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .all-screen {
+    background-color: rgb(34, 9, 9);
+    width: 100%;
+    height: 100vh;
+    opacity: 0.99;
+  }
+  .close-btn {
+    display: none;
+  }
+  .show-x-btn {
+    display: block;
+  }
+}

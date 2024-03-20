@@ -1,0 +1,4 @@
+1. Create header menu
+2. Create hamburger menu
+3. Create responsive for Hamburger menu
+4. Create x button when hamburger menu for exit
